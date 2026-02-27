@@ -1,4 +1,6 @@
 #include <Arduino.h>
+int irPin = 2;      // IR OUT pin connected to pin 2
+int ledPin = 9;
 /**
  * @file main.cpp
  * @brief Embedded Obstacle Detection System using IR Sensor
