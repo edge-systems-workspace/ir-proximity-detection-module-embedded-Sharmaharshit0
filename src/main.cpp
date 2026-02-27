@@ -19,7 +19,8 @@ int ledPin = 9;
  // Create variable to store sensor state
 
 void setup() {
-
+    pinMode(irPin, INPUT);
+    pinMode(ledPin, OUTPUT);
     // TODO 3:
     // Initialize Serial communication (9600 baud rate)
 
