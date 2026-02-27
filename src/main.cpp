@@ -4,8 +4,8 @@ int ledPin = 9;
 /**
  * @file main.cpp
  * @brief Embedded Obstacle Detection System using IR Sensor
- * @author YOUR_NAME
- * @date YYYY-MM-DD
+ * @author Harshit Sharma
+ * @date 2026-02-27
  *
  * @details
  * Reads digital input from IR sensor
@@ -32,7 +32,13 @@ void setup() {
 }
 
 void loop() {
+    int sensorValue = digitalRead(irPin);
 
+    if (sensorValue == LOW) {   // Object detected (usually LOW)
+        digitalWrite(ledPin, HIGH);
+    } else {
+        digitalWrite(ledPin, LOW);
+    }
     // TODO 6:
     // Read digital value from IR sensor
 
